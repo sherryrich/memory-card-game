@@ -3,4 +3,4 @@
 A deployed link to the website can be found [here](https://sherryrich.github.io/memory-card-game/)
 
 ## Showcase
-![Preview](https://github.com/sherryrich/memory-card-game/showcase.PNG)
+![Preview](https://github.com/sherryrich/memory-card-game/blob/main/showcase.PNG)
