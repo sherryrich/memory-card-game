@@ -14,6 +14,10 @@ const getData = () => [
     { imgSrc: "./images/weather.png", name: "weather" },
     { imgSrc: "./images/duolingo.png", name: "duolingo" },
     { imgSrc: "./images/app-store.png", name: "app-store" },
+    { imgSrc: "./images/deliveroo.png", name: "deliveroo" },
+    { imgSrc: "./images/duolingo.png", name: "duolingo" },
+    { imgSrc: "./images/nike.png", name: "nike" },
+    { imgSrc: "./images/instagram.png", name: "instagram"},
 ];
 
 
