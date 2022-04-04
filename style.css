@@ -48,7 +48,7 @@ perspective: 800PX;
     transform: rotateY(-180deg)
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     section {
         display: grid;
         grid-template-columns: repeat(4, 4rem);
@@ -57,3 +57,13 @@ perspective: 800PX;
         perspective: 800PX;
         }
   }
+
+  @media screen and (max-width: 550px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 2rem);
+        grid-template-rows: repeat(4, 2rem);
+        grid-gap: 1.5rem;
+        perspective: 800PX;
+        }
+  }  
