@@ -16,7 +16,7 @@ const getData = () => [
     { imgSrc: "./images/maps.png", name: "maps" },
     { imgSrc: "./images/deliveroo.png", name: "deliveroo" },
     { imgSrc: "./images/duolingo.png", name: "duolingo" },
-    { imgSrc: "./images/nike.png", name: "nike" },
+    { imgSrc: "./images/twitter.png", name: "twitter" },
     { imgSrc: "./images/instagram.png", name: "instagram" },
     { imgSrc: "./images/whatsapp.png", name: "whatsapp" },
     { imgSrc: "./images/weather.png", name: "weather" },
@@ -24,7 +24,7 @@ const getData = () => [
     { imgSrc: "./images/maps.png", name: "maps" },
     { imgSrc: "./images/deliveroo.png", name: "deliveroo" },
     { imgSrc: "./images/duolingo.png", name: "duolingo" },
-    { imgSrc: "./images/nike.png", name: "nike" },
+    { imgSrc: "./images/twitter.png", name: "twitter" },
     { imgSrc: "./images/instagram.png", name: "instagram" },
 ];
 
@@ -40,7 +40,7 @@ const randomize = () => {
 const cardGenerator = () => {
     const cardData = randomize();
     //Generate the HTML
-    cardData.forEach((item) => {
+    cardData.forEach((item, index) => {
         const card = document.createElement("div");
         const face = document.createElement("img");
         const back = document.createElement("div");
@@ -49,6 +49,7 @@ const cardGenerator = () => {
         back.classList = "back";
         //attach the info to the cards
         face.src = item.imgSrc;
+        card.setAttribute("name", item.name)
         //attach the card to the section
         sections.appendChild(card);
         card.appendChild(face);
@@ -57,8 +58,16 @@ const cardGenerator = () => {
 
         card.addEventListener("click", (e) => {
             card.classList.toggle("toggleCard");
+            checkCards(e);
         })
     });
 };
+
+//Check Cards
+const checkCards = (e) => {
+    const clickedCard = e.target;
+    console.log(clickedCard);
+};
+
 
 cardGenerator();
